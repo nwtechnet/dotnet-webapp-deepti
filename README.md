@@ -38,8 +38,9 @@ An example of using this data efficiently:
 - I can delete the User from my favorites [DELETE]
 
 ## Checklist
-[] Did you use git?
-[] Generate a dotnet app with all CRUD operations?
-[] Add proper code styling and linting?
-[] Use the Github API?
-[] Complete the documentation?
+
+- [ ] Did you use git?
+- [ ] Generate a dotnet app with all CRUD operations?
+- [ ] Add proper code styling and linting?
+- [ ] Use the Github API?
+- [ ] Complete the documentation?
