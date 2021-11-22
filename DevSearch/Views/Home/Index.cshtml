@@ -3,6 +3,15 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	<section id="SearchForm">
+		<form id="gitUserSrch">
+			<label for="gitUserInput">GitHub Username:</label>
+			<input type="search" id="gitUserInput" name="gitUserInput" placeholder="GitHub Username" />
+			<input type="submit" value="Search" />
+		</form>
+	</section>
+	<section id="SeachResults">
+		<ul id="userProfile" class="list-group mx-auto mb-5" style="width: 500px">
+		</ul>
+	</section>
 </div>
