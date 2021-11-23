@@ -40,8 +40,6 @@ function requestUserRepos(username) {
 
 			iCnt++;
 
-			console.log(`${key}: ${value}`);
-
 			let li = document.createElement('li');
 
 			li.classList.add('list-group-item')
@@ -52,8 +50,9 @@ function requestUserRepos(username) {
 			else {
 				bUserFound = true;
 				li.innerHTML = (`<p><strong>${key}:</strong></br> ${value}</p>`);
+				li.innerHTML = li.innerHTML + (`<input type="hidden" id="${key}" name="${key}" value="${value}">`);
 				if (iCnt == 1)
-					li.innerHTML = li.innerHTML + '<input type="button" value="Add to Favorties"/>';
+					li.innerHTML = li.innerHTML + '<input type="submit" value="Add to Favorties"/>';
 			}
 
 			ul.appendChild(li);

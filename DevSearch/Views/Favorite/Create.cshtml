@@ -1,0 +1,193 @@
+﻿@model DevSearch.Models.Favorite
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Favorite</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="avatar_url" class="control-label"></label>
+                <input asp-for="avatar_url" class="form-control" />
+                <span asp-validation-for="avatar_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="bio" class="control-label"></label>
+                <input asp-for="bio" class="form-control" />
+                <span asp-validation-for="bio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="blog" class="control-label"></label>
+                <input asp-for="blog" class="form-control" />
+                <span asp-validation-for="blog" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="company" class="control-label"></label>
+                <input asp-for="company" class="form-control" />
+                <span asp-validation-for="company" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="created_at" class="control-label"></label>
+                <input asp-for="created_at" class="form-control" />
+                <span asp-validation-for="created_at" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="events_url" class="control-label"></label>
+                <input asp-for="events_url" class="form-control" />
+                <span asp-validation-for="events_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="followers" class="control-label"></label>
+                <input asp-for="followers" class="form-control" />
+                <span asp-validation-for="followers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="followers_url" class="control-label"></label>
+                <input asp-for="followers_url" class="form-control" />
+                <span asp-validation-for="followers_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="following" class="control-label"></label>
+                <input asp-for="following" class="form-control" />
+                <span asp-validation-for="following" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="following_url" class="control-label"></label>
+                <input asp-for="following_url" class="form-control" />
+                <span asp-validation-for="following_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="gists_url" class="control-label"></label>
+                <input asp-for="gists_url" class="form-control" />
+                <span asp-validation-for="gists_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="gravatar_id" class="control-label"></label>
+                <input asp-for="gravatar_id" class="form-control" />
+                <span asp-validation-for="gravatar_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="hireable" class="control-label"></label>
+                <input asp-for="hireable" class="form-control" />
+                <span asp-validation-for="hireable" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="html_url" class="control-label"></label>
+                <input asp-for="html_url" class="form-control" />
+                <span asp-validation-for="html_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="id" class="control-label"></label>
+                <input asp-for="id" class="form-control" />
+                <span asp-validation-for="id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="location" class="control-label"></label>
+                <input asp-for="location" class="form-control" />
+                <span asp-validation-for="location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="login" class="control-label"></label>
+                <input asp-for="login" class="form-control" />
+                <span asp-validation-for="login" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="node_id" class="control-label"></label>
+                <input asp-for="node_id" class="form-control" />
+                <span asp-validation-for="node_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="organizations_url" class="control-label"></label>
+                <input asp-for="organizations_url" class="form-control" />
+                <span asp-validation-for="organizations_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="public_gists" class="control-label"></label>
+                <input asp-for="public_gists" class="form-control" />
+                <span asp-validation-for="public_gists" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="public_repos" class="control-label"></label>
+                <input asp-for="public_repos" class="form-control" />
+                <span asp-validation-for="public_repos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="received_events_url" class="control-label"></label>
+                <input asp-for="received_events_url" class="form-control" />
+                <span asp-validation-for="received_events_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="repos_url" class="control-label"></label>
+                <input asp-for="repos_url" class="form-control" />
+                <span asp-validation-for="repos_url" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="site_admin" /> @Html.DisplayNameFor(model => model.site_admin)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="starred_url" class="control-label"></label>
+                <input asp-for="starred_url" class="form-control" />
+                <span asp-validation-for="starred_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="subscriptions_url" class="control-label"></label>
+                <input asp-for="subscriptions_url" class="form-control" />
+                <span asp-validation-for="subscriptions_url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="twitter_username" class="control-label"></label>
+                <input asp-for="twitter_username" class="form-control" />
+                <span asp-validation-for="twitter_username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="type" class="control-label"></label>
+                <input asp-for="type" class="form-control" />
+                <span asp-validation-for="type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="updated_at" class="control-label"></label>
+                <input asp-for="updated_at" class="form-control" />
+                <span asp-validation-for="updated_at" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="url" class="control-label"></label>
+                <input asp-for="url" class="form-control" />
+                <span asp-validation-for="url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="notes" class="control-label"></label>
+                <input asp-for="notes" class="form-control" />
+                <span asp-validation-for="notes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
